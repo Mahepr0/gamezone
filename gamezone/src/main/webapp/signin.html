@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>GameZone Sign In</title>
+<style type="text/css">
+* {  
+  padding: 0;  
+  margin: 0;  
+  box-sizing: border-box;  
+ }  
+ body {  
+  font-family: "Helvetica";  
+ }  
+ section {  
+  min-height: 100vh;  
+  width: 100%;  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+  background-image: linear-gradient(to top, rgba(232, 63, 67,0), rgba(255,0,0,1)); 
+ }  
+ .container {  
+  max-width: 400px;  
+  width: 90%;  
+  padding: 20px;  
+  box-shadow: 0px 0px 20px #00000020;  
+  border-radius: 8px;  
+  background-color: white;  
+ }  
+ input {  
+  width: 100%;  
+  border: 1.5px solid rgba(232, 63, 67, 0.418);  
+  padding: 5px;  
+  font-size: 18px;  
+  margin-top: 5px;  
+  border-radius: 4px;  
+ }
+ .submit{
+  background-color: rgb(232, 63, 67);
+ }
+</style>
+</head>
+<body>
+<section>
+<div class="container">
+<h2>GameZone SignIn</h2>
+		<form name="myform" action="signindetail" method="post">
+			First name:<input type="text" id="fname" name="fname"><br><br>
+			
+			Last name:<input type="text" id="lname" name="lname"><br><br>
+			
+			User name: <input type="text" id="uname" name="uname"><br><br>
+			
+			Email-Id: <input type="text" name="email"><br><br>
+			
+			Mobile: <input type="text" name="num"><br><br>
+			
+			Password: <input type="password" id="passw1" name="passw1"><br><br>
+			
+			Re-enter Password: <input type="password" id="passw2" name="passw2"><br><br>
+			
+			<input type="submit" value="Submit" class="submit"><br><br>
+		</form>
+		</div>
+</section>
+</body>
+</html>
